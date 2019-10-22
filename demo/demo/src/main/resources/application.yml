@@ -1,0 +1,32 @@
+demo:
+    config:
+        remote-webservice:
+            base: http://bhut.herokuapp.com
+            endpoint:
+                listcar: /api/cars
+                createcar: /api/cars
+        datasource:          
+            url: jdbc:h2:file:./data/demo
+            username: sa
+            password: password
+            driver-class-name: org.h2.Driver
+          
+spring:
+    profiles:
+        active: default
+    jpa:
+        open-in-view: false
+        show-sql: false
+        generate-ddl: false
+        hibernate:
+            ddl-auto: none
+            naming:
+                physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+        properties.hibernate:
+            dialect: org.hibernate.dialect.H2Dialect
+    http.encoding:
+        enabled: true
+        charset: UTF-8
+
+server:
+  port: 8000

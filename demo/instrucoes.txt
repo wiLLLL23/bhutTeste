@@ -1,0 +1,13 @@
+Projeto criado com Spring Initializr (https://start.spring.io/)
+
+Instrucoes:
+
+Compilar o projeto com "mvn clean install"
+
+na pasta target, gera o arquivo demo-1.0.0.jar
+
+Executar como java -jar demo-1.0.0.jar
+
+valeu
+
+obs: nao escrevi nenhum teste automatico pq n deu tempo mas qualquer coisa avisa q escrevo hj a noite.
